@@ -169,6 +169,72 @@ class StudentRegistry:
 
 
 if __name__ == "__main__":
+    print("=== Task 1: Node sinfinin yaradılması ===")
+    node1 = Node(15)
+    print(f"Data: {node1.data}, Next: {node1.next}\n")
+
+    print("=== Task 2: Siyahının sonuna element əlavə etmək ===")
+    ll = LinkedList()
+    for val in [10, 20, 30, 40]:
+        ll.append(val)
+    ll.display()
+    print()
+
+    print("=== Task 3: Siyahının əvvəlinə element əlavə etmək ===")
+    ll3 = LinkedList()
+    for val in [20, 30, 40]:
+        ll3.append(val)
+    ll3.prepend(10)
+    ll3.display()
+    print()
+
+    print("=== Task 4: Verilmiş elementdən sonra əlavə etmək ===")
+    ll4 = LinkedList()
+    for val in [10, 20, 40]:
+        ll4.append(val)
+    ll4.insert_after(20, 30)
+    ll4.display()
+    print()
+
+    print("=== Task 5: Element silmək ===")
+    ll5 = LinkedList()
+    for val in [10, 20, 30, 40, 50]:
+        ll5.append(val)
+    ll5.delete_node(30)
+    ll5.display()
+    print()
+
+    print("=== Task 6: Axtarış ===")
+    ll6 = LinkedList()
+    for val in [10, 20, 30, 40]:
+        ll6.append(val)
+    ll6.search(30)
+    ll6.search(99)
+    print()
+
+    print("=== Task 7: Uzunluğun hesablanması ===")
+    ll7 = LinkedList()
+    for val in [11, 22, 33, 44, 55]:
+        ll7.append(val)
+    ll7.length()
+    print()
+
+    print("=== Task 8: Maksimum və minimum element ===")
+    ll8 = LinkedList()
+    for val in [23, 8, 91, 15, 42]:
+        ll8.append(val)
+    ll8.find_min_max()
+    print()
+
+    print("=== Task 9: Siyahını tərs çevirmək ===")
+    ll9 = LinkedList()
+    for val in [10, 20, 30, 40, 50]:
+        ll9.append(val)
+    ll9.reverse()
+    ll9.display()
+    print()
+
+    print("=== Task 10: Tələbə qeydiyyat sistemi (Challenge) ===")
     sr = StudentRegistry()
     sr.add_student(1, "Ali Aliyev", 85)
     sr.add_student(2, "Leyla Mammadova", 78)
