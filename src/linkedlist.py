@@ -1,3 +1,4 @@
+# Task 1: Node sinfini yaratmaq
 class Node:
     def __init__(self, data):
         self.data = data
@@ -168,10 +169,9 @@ class StudentRegistry:
 
 
 if __name__ == "__main__":
-    print("--- Lab 1 Test ---")
-    ll = LinkedList()
-    ll.append(10)
-    ll.append(20)
-    ll.append(40)
-    ll.insert_after(20, 30)
-    ll.display()
+    sr = StudentRegistry()
+    sr.add_student(1, "Ali Aliyev", 85)
+    sr.add_student(2, "Leyla Mammadova", 78)
+    sr.add_student(3, "Murad Huseynov", 92)
+    sr.filter_high_gpa()
+    sr.count_students()
